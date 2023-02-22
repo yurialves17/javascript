@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVN</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+            background: rgb(226, 226, 226);
+        }
+
+        input {
+            font: normal Arial;
+        }
+
+        div#res {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Verificação de Nacionalidade</h1>
+    Em qual país você nasceu? <input type="text" id="birthplace">
+    <input type="button" value="Verificar" onclick="checkBirthPlace()">
+    
+    <div id="res"></div>
+    
+    <script>
+
+        function checkBirthPlace(){
+            var countryName = document.querySelector("input#birthplace")
+            var res = document.querySelector("div#res")
+
+            if (countryName.value == "Brasil") {
+                res.innerHTML = "Você é brasileiro!"
+            } else {
+                res.innerHTML = `Você é <strong>estrangeiro</strong>!`
+            }
+        }
+    </script>
+</body>
+</html>
