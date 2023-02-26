@@ -2,9 +2,8 @@ function carregar(){
     var msg = window.document.getElementById('msg')
     var img = document.getElementsByName('img')
     var data = new Date()
-    //var hora = data.getHours()
-    var hora = 18
-
+    var hora = data.getHours()
+    
     if(hora >= 0 && hora < 12){
         img.src = 'fotomanha.png'
         document.body.style.background = '#c3cbcd'
