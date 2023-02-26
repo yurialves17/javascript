@@ -21,4 +21,4 @@ function carregar(){
     }
 
 }
-
+//problema de imagem a ser resolvido!!
