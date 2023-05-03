@@ -1,6 +1,6 @@
 function carregar(){
     var msg = window.document.getElementById('msg')
-    var img = document.getElementsByName('img')
+    var img = document.getElementById('imagem')
     var data = new Date()
     var hora = data.getHours()
     
@@ -10,7 +10,7 @@ function carregar(){
         msg.innerHTML = `Agora são ${hora} horas. <br>Bom dia!`
     
     }else if(hora >= 12 && hora <= 18){
-        img.src = 'imagens/fototarde.png'
+        img.src = 'fototarde.png'
         document.body.style.background = '#b67468'
         msg.innerHTML = `Agora são ${hora} horas. <br>Boa tarde!`
     
